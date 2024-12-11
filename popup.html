@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vision</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>VisionAid</h1>
+    
+    <div class="input-group">
+      <label for="textSize">Text Size:</label>
+      <input type="range" id="textSize" min="100" max="110" value="100">
+    </div>
+
+    <div class="input-group">
+      <div class="checkbox-group">
+        <input type="checkbox" id="contrast">
+        <label for="contrast">High Contrast</label>
+      </div>
+    </div>
+
+    <div class="input-group">
+      <div class="checkbox-group">
+        <input type="checkbox" id="darkMode">
+        <label for="darkMode">Dark Mode</label>
+      </div>
+    </div>
+
+    <div class="input-group">
+      <label for="colorBlindMode">Colorblind Mode:</label>
+      <select id="colorBlindMode">
+        <option value="none">None</option>
+        <option value="deuteranopia">Deuteranopia (Green Weak)</option>
+        <option value="protanopia">Protanopia (Red Weak)</option>
+        <option value="tritanopia">Tritanopia (Blue Weak)</option>
+      </select>
+    </div>
+
+    <button id="applySettings">Apply</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

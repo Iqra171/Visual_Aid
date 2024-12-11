@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "VisionAid",
+  "version": "1.0",
+  "description": "Accessibility tool to summarize, adjust, and read text aloud.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+    "16": "icon.jpg",
+    "48": "icon.jpg",
+    "128": "icon.jpg"
+    }
+   
+  },
+  "permissions": ["scripting", "activeTab"]
+  
+}
